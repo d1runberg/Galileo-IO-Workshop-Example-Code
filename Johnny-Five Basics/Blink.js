@@ -1,5 +1,6 @@
 var five = require("johnny-five");
 var galileo = require("galileo-io");
+
 var board = new five.Board({
    io: new galileo()
 });

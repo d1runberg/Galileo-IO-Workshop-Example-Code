@@ -7,9 +7,9 @@ var board = new five.Board({
 
 board.on("ready", function() {
 
-  var potentiometer = new five.Sensor("A0");
+  var sensor = new five.Sensor("A0");
   // "slide" is an alias for "change", only prints when value changes!
-  potentiometer.scale([0, 100]).on("data", function() {
+  sensor.scale([0, 100]).on("data", function() {
     console.log("slide", this.value);
   });
 });
